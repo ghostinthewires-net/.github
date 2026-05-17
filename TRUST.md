@@ -55,9 +55,9 @@ backup YubiKey are provisioned with identical subkeys.
 This key is published at the following locations. Verify the fingerprint
 matches across all sources before trusting any signed artifact:
 
-  https://ghostinthewires.net/.well-known/signing-key.asc
-  https://keys.openpgp.org/search?q=gitw%40ghostinthewires.net
-  https://github.com/ghostinthewires-net/.github/blob/main/KEYS.md
+  https://ghostinthewires.net/.well-known/signing-key.asc  
+  https://keys.openpgp.org/search?q=gitw%40ghostinthewires.net  
+  https://github.com/ghostinthewires-net/.github/blob/main/KEYS.md  
 
 WKD automatic discovery:  
   gpg --auto-key-locate wkd --locate-keys gitw@ghostinthewires.net  
