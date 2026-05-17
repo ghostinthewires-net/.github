@@ -73,15 +73,19 @@ KkLUstGCHuMn1rinAQD9TAG+pkFBmthkUNqllVEfvUVOYHR2SqZbQrLgoljiAA==
 ## Verifying a Signature
 
 ```bash
-# Import the signing key
+# Import the signing key (once)
 gpg --fetch-keys https://ghostinthewires.net/.well-known/signing-key.asc
 
 # Verify a detached signature
-gpg --verify FILE.asc FILE
+gpg --verify FILE.txt.asc FILE.txt
 
-# Verify SHA256SUMS
-gpg --verify SHA256SUMS.asc SHA256SUMS
-sha256sum -c SHA256SUMS
+# Verify SHA512SUMS
+gpg --verify SHA512SUMS.asc SHA512SUMS
+sha512sum -c SHA512SUMS
+
+# Verify BLAKE3SUMS (requires b3sum)
+gpg --verify BLAKE3SUMS.asc BLAKE3SUMS
+b3sum --check BLAKE3SUMS
 ```
 
 ## Key Rotation
