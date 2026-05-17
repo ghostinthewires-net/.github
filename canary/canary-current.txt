@@ -1,0 +1,90 @@
+# Warrant Canary — ghostinthewires
+
+Published: 2026-05-17
+Next update due: Within 30 days of any commit activity
+Maintainer: ghostinthewires (primary maintainer)
+Scope: This canary covers the primary maintainer only.
+Signing key: https://ghostinthewires.net/.well-known/signing-key.asc
+Fingerprint: 991752BB 1870377D D82AD22D EC5A18D2 914A478D
+
+## Statements
+
+As of the date above, to the best of my knowledge:
+
+1. I have not received any National Security Letters, FISA orders, or other
+   secret government demands related to this project or its users.
+
+2. I have not been compelled to modify, backdoor, or sabotage any
+   ghostinthewires project, tool, installer, or documentation.
+
+3. I have not been compelled to insert malicious code, weaken cryptographic
+   implementations, or otherwise compromise the integrity of any release.
+
+4. I have not been compelled to disclose the identity, activity, or
+   information of any contributor or user of this project.
+
+5. The project signing keys have not been compromised, seized, or handed
+   over to any third party.
+
+6. I am not subject to any gag order, non-disclosure agreement, or legal
+   instrument that prevents me from making the disclosures above.
+
+7. No governmental or corporate entity has taken control of any
+   ghostinthewires infrastructure, domain, or repository.
+
+## Update Policy
+
+This canary is updated during active development periods. If commits are
+being pushed to this organization's repositories but this canary has not
+been updated within 30 days, treat that as a signal that something may
+be wrong.
+
+Extended hiatuses with no commits are normal and do not require a canary
+update. The absence of commits is not a signal of compromise.
+
+## Succession
+
+A designated successor has been appointed as org owner. In the event the
+primary maintainer becomes permanently unavailable, the successor will
+assume ownership and publish a signed statement using their own GPG key.
+Their key and canary will be documented here when their cryptographic
+infrastructure is established.
+
+## Freshness Proof
+
+The following are included as proof this canary could not have been
+created before 2026-05-17. They could not have been known in advance.
+
+Bitcoin block height and hash (verifiable at blockchain.info):
+Block 949810: 000000000000000000012e846702f13d00b7aa836fe6b3650fa820e4fd786895
+
+News headlines:
+- "WHO declares Ebola outbreak in Congo, Uganda an emergency of
+  international concern" — Reuters, 2026-05-17
+  https://www.reuters.com/business/healthcare-pharmaceuticals/who-declares-ebola-outbreak-congo-uganda-global-health-emergency-2026-05-17/
+
+- "Large-scale Ukrainian drone attack kills three in Moscow region,
+  says Russia" — BBC News, 2026-05-17
+  https://www.bbc.com/news/articles/c5ye480kxpmo
+
+## What the absence of this canary means
+
+If this organization is actively committing code but this canary has not
+been updated within 30 days, assume something is wrong. Do not trust any
+releases, installers, or signed artifacts until a new canary is published
+and independently verified.
+
+## Verification
+
+To verify this canary was signed by the project signing key:
+
+  gpg --fetch-keys https://ghostinthewires.net/.well-known/signing-key.asc
+  gpg --verify canary-2026-05.txt.asc canary-2026-05.txt
+
+The signing key fingerprint must match:
+  991752BB 1870377D D82AD22D EC5A18D2 914A478D
+
+## Archive
+
+Previous canaries are archived at:
+  https://github.com/ghostinthewires-net/.github/tree/main/canary/

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Generating SHA512SUMS..."
+git ls-files | grep -vE '^(SHA512SUMS|BLAKE3SUMS)' | sort | xargs sha512sum > SHA512SUMS
+
+echo "Generating BLAKE3SUMS..."
+git ls-files | grep -vE '^(SHA512SUMS|BLAKE3SUMS)' | sort | xargs b3sum > BLAKE3SUMS
+
+echo "Signing SHA512SUMS..."
+export GPG_TTY=$(tty)
+gpg --armor --detach-sign --yes SHA512SUMS
+
+echo "Signing BLAKE3SUMS..."
+gpg --armor --detach-sign --yes BLAKE3SUMS
+
+git add SHA512SUMS SHA512SUMS.asc BLAKE3SUMS BLAKE3SUMS.asc
+
+echo "SHA512SUMS and BLAKE3SUMS generated and signed."
