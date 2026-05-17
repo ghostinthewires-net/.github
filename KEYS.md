@@ -9,6 +9,7 @@ This key is managed by Proton Mail. The private key is held in Proton Mail's inf
 
 - **Key URL:** https://ghostinthewires.net/.well-known/pgp-key.asc
 - **Fingerprint:** F90D E5A4 2657 59CA 4CB3 3F2D 8CF1 8303 85E9 3B4F
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xjMEaf+NVxYJKwYBBAHaRw8BAQdA9Xf5OD0xrNn+e/UQ3mqeNNtQk4r2U1gY
@@ -26,6 +27,7 @@ TwAAs6AA/R5ncQdh04rYLn2wiR56Ai0Eej1JIJPDyXlPOqRIdVsPAQC/OH9Q
 fnywibm3oKZpTWoIqA1/8XY8hxTPZdpuPmBfBw==
 =Xi8C
 -----END PGP PUBLIC KEY BLOCK-----
+```
 ## Signing Key
 
 For verifying signatures on release artifacts, commits, the warrant canary, and project documents.
@@ -43,6 +45,7 @@ Subkeys:
 | Sign [S] | Ed25519 | 5AAB E9E3 234D 6B7D 3E75 B509 DA2C 77E8 2F38 3B67 | 2028-05-10 |
 | Encrypt [E] | Cv25519 | A517 AFA3 091E FC52 609A FEA1 13F4 2D52 7549 16FE | 2028-05-10 |
 | Authenticate [A] | Ed25519 | ED83 2F1D 7DB4 3470 DC4A 08E1 7A40 2E1D 377D DB61 | 2028-05-10 |
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mDMEagFS4hYJKwYBBAHaRw8BAQdAlm9Yyw2JMtbMAr1z5GaDI6zQK7GKEIBPwxeN
@@ -66,6 +69,7 @@ AVONAhsgBQkDwmcAAAoJEOxaGNKRSkeNqZQBAOCmCUN+NmICnOpRCf/mUl5n2MAu
 KkLUstGCHuMn1rinAQD9TAG+pkFBmthkUNqllVEfvUVOYHR2SqZbQrLgoljiAA==
 =9egF
 -----END PGP PUBLIC KEY BLOCK-----
+```
 ## Verifying a Signature
 
 ```bash
