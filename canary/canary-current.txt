@@ -87,4 +87,4 @@ The signing key fingerprint must match:
 ## Archive
 
 Previous canaries are archived at:
-  https://github.com/ghostinthewires-net/.github/tree/main/canary/
+  https://ghostinthewires.net/canary/archive

@@ -5,7 +5,7 @@
 To report a security vulnerability in any ghostinthewires project, please
 email gitw@ghostinthewires.net using the encryption key below.
 
-Do not open a public GitHub issue for security vulnerabilities.
+Do not open a public issue for security vulnerabilities.
 
 **Encryption key:** https://ghostinthewires.net/.well-known/pgp-key.asc
 **Fingerprint:** F90D E5A4 2657 59CA 4CB3 3F2D 8CF1 8303 85E9 3B4F

@@ -19,17 +19,29 @@ An operational security handbook covering the full lifecycle of operating on the
 
 ## Trust and Verification
 
-All releases are signed. Verify signatures before running anything.
+All releases are signed. Verify signatures before running anything.  
+- **Identities:** https://ghostinthewires.net/identities  
+- **Signing key:** https://ghostinthewires.net/.well-known/signing-key.asc  
+- **Fingerprint:** `991752BB 1870377D D82AD22D EC5A18D2 914A478D`  
+- **Key documentation:** [KEYS.md](../KEYS.md)  
+- **Warrant canary:** https://ghostinthewires.net/canary.txt  
 
-- **Signing key:** https://ghostinthewires.net/.well-known/signing-key.asc
-- **Fingerprint:** `991752BB 1870377D D82AD22D EC5A18D2 914A478D`
-- **Key documentation:** [KEYS.md](../KEYS.md)
-- **Warrant canary:** https://ghostinthewires.net/canary
+Import the signing key once:  
 
 ```bash
 gpg --fetch-keys https://ghostinthewires.net/.well-known/signing-key.asc
-gpg --verify SHA256SUMS.asc SHA256SUMS
-sha256sum -c SHA256SUMS
+```
+
+Verify integrity:
+
+```bash
+# SHA512 (standard, no extra tools required)
+gpg --verify SHA512SUMS.asc SHA512SUMS
+sha512sum -c SHA512SUMS
+
+# BLAKE3 (requires b3sum — install via your package manager or cargo install b3sum)
+gpg --verify BLAKE3SUMS.asc BLAKE3SUMS
+b3sum --check BLAKE3SUMS
 ```
 
 ---

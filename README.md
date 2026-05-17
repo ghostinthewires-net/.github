@@ -11,6 +11,8 @@ Org-wide documentation for the ghostinthewires project.
 - [`BLAKE3SUMS.asc`](BLAKE3SUMS.asc) — Detached GPG signature of BLAKE3SUMS.
 
 ### Keys and Trust
+- [`IDENTITIES.md`](IDENTITIES.md) — Signed list of official organization identities and presences.
+- [`IDENTITIES.md.asc`](IDENTITIES.md.asc) — Detached GPG signature of IDENTITIES.md.
 - [`KEYS.md`](KEYS.md) — Public keys and their purposes. Verify signatures on all project artifacts against the signing key listed here.
 - [`KEYS.md.asc`](KEYS.md.asc) — Detached GPG signature of KEYS.md.
 - [`SECURITY.md`](SECURITY.md) — Vulnerability disclosure policy.

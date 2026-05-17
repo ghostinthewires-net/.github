@@ -1,14 +1,14 @@
 # Keys
 
-This document lists the public keys used by the ghostinthewires project and their purposes.
+This document lists the public keys used by the ghostinthewires project and their purposes.  
 
 ## Email Encryption
 
-For sending encrypted email to gitw@ghostinthewires.net.
-This key is managed by Proton Mail. The private key is held in Proton Mail's infrastructure.
+For sending encrypted email to gitw@ghostinthewires.net.  
+This key is managed by Proton Mail. The private key is held in Proton Mail's infrastructure.  
 
-- **Key URL:** https://ghostinthewires.net/.well-known/pgp-key.asc
-- **Fingerprint:** F90D E5A4 2657 59CA 4CB3 3F2D 8CF1 8303 85E9 3B4F
+- **Key URL:** https://ghostinthewires.net/.well-known/pgp-key.asc  
+- **Fingerprint:** F90D E5A4 2657 59CA 4CB3 3F2D 8CF1 8303 85E9 3B4F  
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -70,6 +70,15 @@ KkLUstGCHuMn1rinAQD9TAG+pkFBmthkUNqllVEfvUVOYHR2SqZbQrLgoljiAA==
 =9egF
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+### Key Distribution
+
+The signing key is available through multiple independent channels. Verify
+the fingerprint matches across all sources before trusting any signed artifact.  
+
+- **Direct:** https://ghostinthewires.net/.well-known/signing-key.asc  
+- **Keyserver:** https://keys.openpgp.org/search?q=gitw%40ghostinthewires.net  
+- **WKD:** `gpg --auto-key-locate wkd --locate-keys gitw@ghostinthewires.net`  
+
 ## Verifying a Signature
 
 ```bash
@@ -90,5 +99,11 @@ b3sum --check BLAKE3SUMS
 
 ## Key Rotation
 
-Subkeys expire 2028-05-10. When keys are rotated, this document will be updated and re-signed.
-The master certify key fingerprint (`991752BB 1870377D D82AD22D EC5A18D2 914A478D`) will remain consistent across rotations.
+Subkeys expire 2028-05-10. When keys are rotated, this document will be updated and re-signed.  
+The master certify key fingerprint (`991752BB 1870377D D82AD22D EC5A18D2 914A478D`) will remain consistent across rotations.  
+
+## See Also
+
+- [TRUST.md](https://ghostinthewires.net/trust) — Cryptographic assertion of key ownership and trust hierarchy  
+- [Identities](https://ghostinthewires.net/identities) — Official organization presences  
+- [Warrant Canary](https://ghostinthewires.net/canary.txt) — Activity-based attestation of project integrity  
