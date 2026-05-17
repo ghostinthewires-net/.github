@@ -15,6 +15,8 @@ Org-wide documentation for the ghostinthewires project.
 - [`KEYS.md.asc`](KEYS.md.asc) — Detached GPG signature of KEYS.md.
 - [`SECURITY.md`](SECURITY.md) — Vulnerability disclosure policy.
 - [`SECURITY.md.asc`](SECURITY.md.asc) — Detached GPG signature of SECURITY.md.
+- [`TRUST.md`](TRUST.md) — Signed cryptographic assertion of key ownership and trust hierarchy.
+- [`TRUST.md.asc`](TRUST.md.asc) — Detached GPG signature of TRUST.md.
 
 ### Warrant Canary
 - [`canary/canary-current.txt`](canary/canary-current.txt) — Current warrant canary.
