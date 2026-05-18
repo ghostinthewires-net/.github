@@ -17,6 +17,15 @@ An operational security handbook covering the full lifecycle of operating on the
 
 ---
 
+## Official Presences
+
+- GitHub: https://github.com/ghostinthewires-net
+- Codeberg: https://codeberg.org/ghostinthewires
+- Mastodon: https://infosec.exchange/@ghostinthewires
+- Web: https://ghostinthewires.net/identities
+
+---
+
 ## Trust and Verification
 
 All releases are signed. Verify signatures before running anything.  
