@@ -42,3 +42,18 @@ To verify integrity against the repository checksums:
 
   gpg --verify BLAKE3SUMS.asc BLAKE3SUMS  
   b3sum --check BLAKE3SUMS  
+
+## Key Distribution
+
+The signing key is available through multiple independent channels. Verify
+the fingerprint matches across all sources before trusting any signed artifact.
+
+  Direct:    https://ghostinthewires.net/.well-known/signing-key.asc  
+  WKD:       gpg --auto-key-locate wkd --locate-keys gitw@ghostinthewires.net  
+  Keyserver: https://keys.openpgp.org/search?q=gitw%40ghostinthewires.net  
+
+## Trust Documentation
+
+  KEYS.md:        https://ghostinthewires.net/keys  
+  TRUST.md:       https://ghostinthewires.net/trust  
+  Warrant Canary: https://ghostinthewires.net/canary.txt
